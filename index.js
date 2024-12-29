@@ -78,6 +78,7 @@ async function handelDynamicWebPage() {
     })
     return data
   })
+  console.log(result);
 
   fs.writeFile('quotes.json', JSON.stringify(result, null, 2));
 
